@@ -2,8 +2,6 @@
 
 基于 PyQt5 的交互式车道线标注工具，支持 CULane 和 TuSimple 两种数据集格式。
 
-这是一个独立项目，不依赖 CLRNet 其他代码，可单独复制使用。
-
 ## 功能
 
 - 加载图片与车道线标签
@@ -146,25 +144,3 @@ output/annotated_culane/
 ```
 
 可视化图片上绘制了调整后的车道线和控制点，方便直接查看标注效果。
-
-## 导出环境配置
-
-```bash
-conda activate lane_annotator
-conda env export --no-builds > lane_annotator_env.yml
-```
-
-`lane_annotator_env.yml` 参考内容：
-
-```yaml
-name: lane_annotator
-channels:
-  - defaults
-dependencies:
-  - python=3.9
-  - pip
-  - pip:
-    - PyQt5
-    - opencv-python
-    - numpy
-```
