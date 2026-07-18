@@ -21,17 +21,8 @@
 ```bash
 conda create -n lane_annotator python=3.9 -y
 conda activate lane_annotator
-pip install PyQt5 opencv-python numpy
-```
-
-Ubuntu 20.04 系统库（如遇到平台插件错误）：
-
-```bash
-sudo apt update
-sudo apt install -y \
-    libxcb-xinerama0 \
-    libgl1-mesa-glx \
-    libqt5x11extras5
+pip install PyQt5 numpy
+pip install opencv-python-headless
 ```
 
 ## 使用方法
